@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pretty-config xmlns="http://ocpsoft.com/prettyfaces/3.2.0"
+               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               xsi:schemaLocation="http://ocpsoft.com/prettyfaces/3.2.0
+               http://ocpsoft.com/xml/ns/prettyfaces/ocpsoft-pretty-faces-3.2.0.xsd">
+
+    <rewrite match="^/old-url/(\w+)/$/" substitute="/new_url/$1/" redirect="301" />
+
+    <!-- Adminitração-->
+    <url-mapping id="admin">
+        <pattern value="/admin" />
+        <view-id>/admin/index.jsf</view-id>
+    </url-mapping>
+    
+    <url-mapping id="user">
+        <pattern value="/principal" />
+        <view-id>/testelogin/index.jsf</view-id>
+    </url-mapping>
+
+    <!-- end -->
+
+
+</pretty-config>
